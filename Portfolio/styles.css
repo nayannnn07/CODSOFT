@@ -1,0 +1,697 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #003153; /* Navbar background color */
+    color: #F5F5F6; /* Navbar text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 2rem 0.5rem; /* Adjust padding as needed */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+/* Logo styles */
+.logo{
+    padding: 10px 20px 0px;
+}
+.logo img {
+    height: 40px; /* Adjust the logo size */
+    width: auto;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}   
+/* Navbar styles */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Space between menu items */
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: #F5F5F6; /* Text color for links */
+    text-decoration: none;
+    font-size: 1.1rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Padding around links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    position: relative;
+}
+
+/* Hover effect for links */
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 95%;
+    height: 2.5px;
+    background-color: #1abc9c;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1abc9c;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Home Section */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #D8E1E6;
+    height: 100vh;
+}
+
+/* Home Content */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This ensures items are spaced from top to bottom */
+    height: 100%; /* Makes sure the content fills the available space */
+    padding: 140px 20px;
+    max-width: 50%;
+    animation: fadeInLeft 1.5s ease-in-out; /* Add fade-in effect */
+}
+
+.home-content h2 {
+    font-size: 70px;
+    color: #003153;
+    animation: slideIn 2s ease-in-out forwards; /* Slide-in animation for heading */
+}
+.home-content h3 {
+    margin-top: 90px;
+    margin-left: 8px;
+    font-size: 20px;
+    color: #003153;
+    animation: slideIn 2s ease-in-out forwards; /* Slide-in animation for heading */
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 26px;
+    color: #16a085;
+    margin-top: 15px;
+    animation: fadeIn 2.5s ease-in-out; /* Fade-in for tagline */
+}
+
+.description {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2c3e50;
+    margin: 25px 0 40px;
+    animation: fadeIn 3s ease-in-out; /* Fade-in for description */
+}
+
+/* Buttons Styling */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+.buttons .btn {
+    background-color: #003153;
+    color: #F5F5F6;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+.buttons .btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.buttons .btn a {
+    color: #F5F5F6;
+    text-decoration: none;
+}
+
+.buttons .btn a:hover {
+    color: #fff;
+}
+
+/* Social Links Styling */
+.social-links {
+    margin: 15px 10px 20px;
+    display: flex;
+    gap: 23px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #003153;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #16a085;
+    transform: scale(1.2);
+}
+/* Profile Image with Decorative Circles and Splashes */
+.image-container {
+    position: relative;
+    width: 350px; /* Adjust size if necessary */
+    height: 350px;
+    margin-right:90px; /* Add left margin to give space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn 1.5s ease-in-out forwards; /* Add zoom-in animation to profile image */
+}
+
+.profile-image-decor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #003153;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+    border: 5px solid #ffffff;
+    /* animation: bounce 4s infinite ease-in-out; Add bounce animation to image */
+}
+
+.profile-image-decor::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Splash Shapes */
+.splash-left, .splash-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+}
+
+.splash-left {
+    left: -20px;
+    top: 0px;
+    animation: slideInLeft 1.5s ease-in-out; /* Slide-in animation for left splash */
+}
+
+.splash-right {
+    right: -60px;
+    top: 160px;
+    animation: slideInRight 1.5s ease-in-out; /* Slide-in animation for right splash */
+}
+
+/* Splash Blob Shapes */
+.splash-left div, .splash-right div {
+    background-color: #ffffff;
+    border-radius: 50% 30% 50% 30%;
+}
+
+/* Specific Splash Left Divs */
+.splash-left div:nth-child(1) {
+    width: 75px;
+    height: 25px;
+    transform: rotate(40deg);
+}
+.splash-left div:nth-child(2) {
+    width: 50px;
+    height: 20px;
+    transform: rotate(15deg);
+}
+.splash-left div:nth-child(3) {
+    width: 40px;
+    height: 15px;
+    transform: rotate(-10deg);
+}
+.splash-left div:nth-child(4) {
+    width: 25px;
+    height: 10px;
+    transform: rotate(-20deg);
+}
+
+/* Specific Splash Right Divs */
+.splash-right div:nth-child(1) {
+    width: 30px;
+    height: 10px;
+    transform: rotate(-20deg);
+    margin: 11px 11px 11px -35px;
+}
+.splash-right div:nth-child(2) {
+    width: 45px;
+    height: 15px;
+    transform: rotate(10deg);
+    margin-left: -40px;
+}
+.splash-right div:nth-child(3) {
+    width: 60px;
+    height: 20px;
+    transform: rotate(20deg);
+    margin-left: -50px;
+}
+.splash-right div:nth-child(4) {
+    width: 80px;
+    height: 25px;
+    transform: rotate(30deg);
+    margin-left: -70px;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* @keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+} */
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* About Section */
+.about {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #003153;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about p {
+    text-align: justify;
+    font-size: 18px;
+    color: #2c3e50;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #d8e1e6; /* Updated background color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: #003153;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+.skills-column {
+    width: 45%; /* Adjust width for columns to fit side by side */
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    color: #003153;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    position: relative;
+    background-color: #fff; /* Skill bar background color */
+    border-radius: 5px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    background-color: #16a085; /* Skill level background color */
+}
+
+.html { width: 90%; }
+.css { width: 80%; }
+.js { width: 50%; }
+.php { width: 70%; }
+.java { width: 30%; }
+.c { width: 80%; }
+.python { width: 60%; }
+.git { width: 40%; }
+.sql { width: 60%; }
+.qa { width: 65%; }
+
+/* Projects Section */
+.projects {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #003153;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.project-card {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); /* Add more shadow */
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-card:hover img {
+    opacity: 0.3; /* Dim the image on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.project-name-overlay {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.project-name-overlay h3 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.project-info {
+    line-height: 1.3;
+}
+.project-card:hover .project-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-card:hover .project-name-overlay {
+    opacity: 0;
+}
+
+.link-project {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003153;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.link-project:hover {
+    background-color: #16a085;
+    transform: scale(1.05); /* Slight button grow effect on hover */
+}
+
+.link-project:active {
+    transform: scale(0.98); /* Button press effect */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+/* Contact Section */
+.contact {
+    background-color: #d8e1e6;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #003153;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.contact-info {
+    width: 48%;
+    margin-top: 100px;
+}
+.contact-form {
+    width: 48%;
+}
+
+.contact-info h2, .contact-form h3 {
+    font-size: 28px;
+    color: #003153;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 19px;
+    color: #2c3e50;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    color: #003153;
+    margin: 8px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #003153;
+    color: #F5F5F6;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto 0; /* Center button horizontally and add margin above */
+}
+
+.contact-form button:hover {
+    background-color: #16a085;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #003153;
+    color: #F5F5F6;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}

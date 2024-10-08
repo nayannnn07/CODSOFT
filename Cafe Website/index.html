@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Amore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+     <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo4.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <!-- <div id="close-icon" class="fas fa-times"></div> -->
+
+            <a href="#" class="nav_item">Home</a>
+            <a href="#about" class="nav_item">About</a>
+            <a href="#menu" class="nav_item">Menu</a>
+            <a href="#contact" class="nav_item">Contact</a>
+            <a href="#testimonials" class="nav_item">Testimonial</a>
+
+        </nav>
+
+        <!-- <div id="menu-icon" class="fas fa-bars"></div> -->
+     </header>
+
+     <!-- home section -->
+     <section class="home">
+            <div class="content">
+                <h1 class="title">start your <span>day</span> with <br/>our fresh <span>coffee</span></h1>
+                <p class="description">Enjoy the Rich Aroma and Bold Flavors of Our Premium Coffee</p>
+                <a href="#services" class="btn">Get Started <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+     </section>
+
+     <!-- service section -->
+     <section id="services" class="services">
+        <h2>OUR <span>SERVICES</span></h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-coffee"></i>
+                <h3>Specialty Coffee</h3>
+                <p>Discover the rich flavors of our coffee, carefully brewed to perfection, from smooth lattes to bold espresso shots, made to brighten your day.</p>
+            </div>
+    
+            <div class="service-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Delicious Food</h3>
+                <p>Savor a variety of fresh-baked goods,  and flavorful meals that bring together the finest ingredients for unforgettable experience.</p>
+            </div>
+    
+            <div class="service-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Green Brew</h3> <!-- New title with a catchy, eco-focused feel -->
+                <p>Experience our commitment to the environment with ethically sourced coffee beans, organic ingredients, and sustainable packaging. </p>
+            </div>
+            
+    
+            <div class="service-card">
+                <i class="fas fa-music"></i>
+                <h3>Live Events</h3>
+                <p>Join us for weekly live music, open mic nights, and coffee workshops to enhance your café experience and connect with the local community.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="best-selling" class="best-selling-section">
+      <h2>OUR <span>BEST</span> SELLING</h2>
+      
+      <div class="best-selling-items">
+        <!-- Coffee Item 1 -->
+        <div class="best-selling-item">
+          <img src="images/matcha latte.webp" alt="matcha">
+          <h4>Matcha Latte</h4>
+        </div>
+    
+        <!-- Coffee Item 2 -->
+        <div class="best-selling-item">
+          <img src="images/cappucino.webp" alt="Cappuccino">
+          <h4>Cappuccino</h4>
+        </div>
+    
+        <!-- Coffee Item 3 -->
+        <div class="best-selling-item">
+          <img src="images/latte.webp" alt="Latte">
+          <h4>Latte</h4>
+        </div>
+    
+        <!-- Coffee Item 4 -->
+        <div class="best-selling-item">
+          <img src="images/iced coffee.webp" alt="Americano">
+          <h4>Iced Coffee</h4>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- about section -->
+    <section id="about" class="about">
+        <h2><span>ABOUT</span> US</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/p4.jpg" alt="Cafe Amore">
+            </div>
+            <div class="about-text">
+                <!-- <h3>Welcome to <span>Cafe Amore</span></h3> -->
+                <p>At <strong>Cafe Amore</strong>, we believe in <em>Taste the Love</em> with every sip. We invite you to experience the essence of exceptional coffee and warm hospitality. We offer a warm and inviting space where you can enjoy premium coffee.</p>
+
+                <p>Our dedicated team handcrafts each beverage using high-quality, ethically sourced beans. From rich espressos to creamy lattes, every cup is a testament to our commitment to exceptional coffee. </p>
+                <p>Pair your drink with our fresh pastries and delicious meals, made with locally sourced ingredients. Whether you're here for a quick coffee break or a leisurely catch-up, Cafe Amore is the perfect place to unwind and connect.</p>
+                <p> We look forward to welcoming you into our cafe soon!</p>
+                
+                <a href="#learn-more" class="btn-learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- menu section -->
+<section id="menu" class="menu-section">
+  <h2>OUR <span>MENU</span></h2>
+
+  <div class="menu-container">
+      <!-- Coffee Menu -->
+      <div class="menu-category coffee">
+          <h3>Coffee</h3>
+          <div class="menu-items">
+              <!-- Coffee Item 1 -->
+              <div class="menu-item">
+                  <img src="images/latte.webp" alt="Latte">
+                  <div class="item-details">
+                      <h4>Latte</h4>
+                      <p>Rs. 200/-</p>
+                  </div>
+              </div>
+
+              <!-- Coffee Item 2 -->
+              <div class="menu-item">
+                  <img src="images/cappucino.webp" alt="Cappuccino">
+                  <div class="item-details">
+                      <h4>Cappuccino</h4>
+                      <p>Rs. 250/-</p>
+                  </div>
+              </div>
+
+              <!-- Coffee Item 3 -->
+              <div class="menu-item">
+                  <img src="images/affogato.webp" alt="affogato">
+                  <div class="item-details">
+                      <h4>Affogato</h4>
+                      <p>Rs. 350/-</p>
+                  </div>
+              </div>
+
+              <!-- Coffee Item 4 -->
+              <div class="menu-item">
+                  <img src="images/iced coffee.webp" alt="iced">
+                  <div class="item-details">
+                      <h4>Iced Coffee</h4>
+                      <p>Rs. 240/-</p>
+                  </div>
+              </div>
+
+              <!-- Coffee Item 5 -->
+              <div class="menu-item">
+                  <img src="images/hot choco.webp" alt="hot choco">
+                  <div class="item-details">
+                      <h4>Hot Chocolate</h4>
+                      <p>Rs. 220/-</p>
+                  </div>
+              </div>
+
+              <!-- Coffee Item 6 -->
+              <div class="menu-item">
+                  <img src="images/matcha latte.webp" alt="matcha">
+                  <div class="item-details">
+                      <h4>Matcha Latte</h4>
+                      <p>Rs. 270/-</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    
+
+      <!-- Cakes Menu -->
+      <div class="menu-category cakes">
+          <h3>CAKES</h3>
+          <div class="menu-items">
+              <!-- Cake Item 1 -->
+              <div class="menu-item">
+                  <img src="images/choco.jpg" alt="Chocolate Cake">
+                  <div class="item-details">
+                      <h4>Chocolate Cake</h4>
+                      <p>Rs. 175/-</p>
+                  </div>
+              </div>
+
+              <!-- Cake Item 2 -->
+              <div class="menu-item">
+                  <img src="images/cheesecake.jpg" alt="Cheesecake">
+                  <div class="item-details">
+                      <h4>Cheesecake</h4>
+                      <p>Rs. 275/-</p>
+                  </div>
+              </div>
+
+              <!-- Cake Item 3 -->
+              <div class="menu-item">
+                  <img src="images/cupcake.jpg" alt="Cup Cake">
+                  <div class="item-details">
+                      <h4>Cup Cake</h4>
+                      <p>Rs. 110/-</p>
+                  </div>
+              </div>
+
+              <!-- Cake Item 4 -->
+              <div class="menu-item">
+                  <img src="images/dark choco.jpg" alt="dark cake">
+                  <div class="item-details">
+                      <h4>Dark Chocolate </h4>
+                      <p>Rs. 210/-</p>
+                  </div>
+              </div>
+
+              <!-- Cake Item 5 -->
+              <div class="menu-item">
+                  <img src="images/oreo.jpg" alt=" Cake">
+                  <div class="item-details">
+                      <h4>Oreo Pie</h4>
+                      <p>Rs. 160/-</p>
+                  </div>
+              </div>
+
+              <!-- Cake Item 6 -->
+              <div class="menu-item">
+                  <img src="images/vanilla cake.jpg" alt="Vanilla Cake">
+                  <div class="item-details">
+                      <h4>Vanilla Cake</h4>
+                      <p>Rs. 190/-</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- contact section -->
+
+    <section id="contact" class="contact">
+      <h2><span>CONTACT</span> US</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-details">
+              <h3><i class="fa-solid fa-location-dot"></i>  &nbsp; Address:</h3>
+              <p>Kathmandu, Nepal</p>
+              
+              <h3><i class="fa fa-phone"></i>  &nbsp; Phone:</h3>
+              <p>+977 9841052638</p>
+      
+              <h3><i class="fa fa-envelope"></i>  &nbsp; Email</h3>
+              <p>cafeamore@gmail.com</p>
+      
+            </div>
+      
+            <div class="contact-form">
+              <h3>GET IN TOUCH WITH US</h3>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+      
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+      
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Leave a message..."></textarea>
+      
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ <!-- discount banner -->
+      <section id="discount-banner" class="discount-banner">
+        <div class="banner-content">
+          <h2>Special Offer!!</h2>
+          <h3>20% Off on All Cakes!</h3>
+          <p>Grab your favorite cakes with a delicious discount. Offer valid till the end of the month.</p>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section id="testimonials" class="testimonials">
+        <div class="testimonials-container swiper">
+          <h2>WHAT OUR <span>CUSTOMERS</span> SAY?</h2>
+          <!-- <div class="testimonial-row swiper-wrapper"> -->
+            <div class="swiper-wrapper">
+            <div class="testimonial-card swiper-slide">
+              <img src="images/1.jpeg" alt="Customer 1" class="testimonial-img">
+              <h3>Jane Doe</h3>
+              <h3 class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </h3>
+              <p>"Cafe Amore is my go-to spot for the perfect cup of coffee. The ambiance is cozy, and the staff is always friendly. Highly recommend!"</p>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <img src="images/2.jpeg" alt="Customer 2" class="testimonial-img">
+              <h3>John Smith</h3>
+              <h3 class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </h3>
+              <p>"I love their pastries and the warm, inviting atmosphere. It’s the perfect place to relax with a good book and a latte."</p>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <img src="images/3.jpg" alt="Customer 3" class="testimonial-img">
+              <h3>Emily Johnson</h3>
+              <h3 class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </h3>
+              <p>"The coffee at Cafe Amore is exceptional. I always enjoy the rich flavor and the friendly service. A true gem in the city!"</p>
+            </div>
+            <div class="testimonial-card swiper-slide">
+              <img src="images/4.jpg" alt="Customer 4" class="testimonial-img">
+              <h3>Michelle Brown</h3>
+              <h3 class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </h3>
+              <p>"I’ve tried many coffee shops, but Cafe Amore stands out with its unique blends. A must-visit for coffee lovers!"</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      
+      
+      <!-- FOOTER SECTION -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="images/logo4.png" alt="Cafe Amore Logo">
+          <p> CONNECT WITH US:</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <p><i class="fa fa-envelope"></i> &nbsp; cafeamore@gmail.com</p>
+        <p><i class="fa fa-phone"></i> &nbsp; +977-9841052638</p>
+        <p><i class="fa-solid fa-location-dot"></i> &nbsp; Kathmandu, Nepal</p>
+      </div>
+      <div class="footer-column">
+        <h3>Working Hours</h3>
+        <p>Sunday-Thursday: 8 AM - 8 PM</p>
+        <p>Friday: 8 AM - 10 PM</p>
+        <p>Saturday: 12 AM - 10 PM</p>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter for the latest updates!</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <a href="#"><i class="fa-solid fa-angle-up" id="up-arrow" ></i></a>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Cafe Amore. All rights reserved.</p>
+    </div>
+  </footer>  
+
+  <!-- SwiperJS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
